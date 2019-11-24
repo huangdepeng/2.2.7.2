@@ -69,7 +69,7 @@ namespace IR {
   }
 
   //%
-  void init(Pins pin){
+  void init(hicbit_Port pin){
     rx = new ReceiverIR((PinName)pin);
     tsb.start(); //interrupt timer for debounce
     create_fiber(monitorIR);
